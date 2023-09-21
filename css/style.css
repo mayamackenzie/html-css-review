@@ -2,32 +2,55 @@
   box-sizing: border-box;
 }
 
-.body {
-  font-family: 'Nunito',sans-serif;
+body {
+  font-family: 'Nunito', sans-serif;
   line-height: 1.5;
+  color: #fff;
   margin: 0;
-  /* color: ; */
 }
 
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-
 }
+
+
 
 #company-name {
-  color: #dec9e9;
+  color: #DEC9E9;
   font-size: 1.5rem;
-
 }
 
+
+#intro,
+#fan-fav,
+#team {
+  padding: 4em 0;
+}
+
+
 #header {
-  background-color: 000;
+  background-color: #000;
+}
+
+#header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding-left: 1.25em;
 }
 
 nav ul li a:link,
 nav ul li a:visited {
-  color:#dec9E9;
+  color: #DEC9E9;
   text-decoration: none;
 }
 
@@ -36,12 +59,95 @@ nav ul li a:focus {
   color: #fff;
 }
 
+
+/* hero banner */
+
 #hero-banner {
   height: 60vh;
-  max-width: 100%;
-  background-color: #7251b5;
+  background-color: #7251B5;
+
   background-image: url(../images/ice-cream-cones.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+#intro {
+  background-color: #7251B5;
+}
+
+#intro p {
+  max-width: 50%;
+}
+
+#fan-fav {
+  background-color: #000;
+  color: #DEC9E9;
+}
+
+#fan-fav ol {
+  list-style-type: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fan-fav ol li {
+  width: 50%;
+  padding-right: 15%;
+}
+
+#team {
+  background-color: #7251B5;
+}
+
+#team h2,
+.team-intro {
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
-/* headings - come back to this */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2.5em;
+  gap: 1em;
+}
+
+.team-grid article {
+  background-color: #6647A6;
+  border-radius: 20px;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.team-grid article img {
+  width: 80px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.team-grid h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.team-grid article p {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1em 0;
+}
+
